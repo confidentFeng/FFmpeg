@@ -3,7 +3,7 @@
 
 #include <QThread>
 #include <QTime>
-#include "XFFmpeg.h"
+#include "VideoPlay.h"
 
 class VPlayThread : public QThread
 {

@@ -8,23 +8,23 @@ VPlayThread::VPlayThread()
 void VPlayThread::run()
 {
     // 打开视频
-    if(!XFFmpeg::GetInstance()->openVideo("../VideoPlayer_2/test.mp4"))
+    if(!VideoPlay::GetInstance()->openVideo("../VideoPlayer_2/test.mp4"))
         return;
     // 查找视频流
-    if(!XFFmpeg::GetInstance()->findVideoStream())
+    if(!VideoPlay::GetInstance()->findVideoStream())
         return;
     // 打开视频解码器
-    if(!XFFmpeg::GetInstance()->openVCodec())
+    if(!VideoPlay::GetInstance()->openVCodec())
         return;
     // 分配一帧图像和AVFrame等所需的空间
-    XFFmpeg::GetInstance()->allocFrame();
+    VideoPlay::GetInstance()->allocFrame();
 
     for (;;)
     {
         // 解码视频帧
         AVPacket *packet = (AVPacket *)av_malloc(sizeof(AVPacket));
         QImage image;
-        int ret = XFFmpeg::GetInstance()->decode(packet, image);//每次读取视频得一帧
+        int ret = VideoPlay::GetInstance()->decode(packet, image);//每次读取视频得一帧
         if (ret == -1)
             break;
         if(ret == -2)
@@ -43,5 +43,5 @@ void VPlayThread::run()
     }
 
     // 关闭文件
-    XFFmpeg::GetInstance()->Close();
+    VideoPlay::GetInstance()->Close();
 }

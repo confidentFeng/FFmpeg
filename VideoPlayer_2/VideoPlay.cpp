@@ -1,13 +1,13 @@
-#include "XFFmpeg.h"
+#include "VideoPlay.h"
 
 
-XFFmpeg::XFFmpeg()
+VideoPlay::VideoPlay()
 {
 
 }
 
 // 打开视频文件（本质是解封装）
-bool XFFmpeg::openVideo(const char *filepath)
+bool VideoPlay::openVideo(const char *filepath)
 {
     // 打开视频文件，先上锁
     m_mutex.lock();
@@ -33,7 +33,7 @@ bool XFFmpeg::openVideo(const char *filepath)
 }
 
 // 查找视频流
-bool XFFmpeg::findVideoStream()
+bool VideoPlay::findVideoStream()
 {
     m_mutex.lock();
     for (int i = 0; i < (int)m_pFormatCtx->nb_streams; i++)
@@ -58,7 +58,7 @@ bool XFFmpeg::findVideoStream()
 }
 
 // 打开视频解码器
-bool XFFmpeg::openVCodec()
+bool VideoPlay::openVCodec()
 {
     m_mutex.lock();
     // 获取视频解码上下文
@@ -84,7 +84,7 @@ bool XFFmpeg::openVCodec()
 }
 
 // 分配一帧图像和AVFrame等所需的空间
-bool XFFmpeg::allocFrame()
+bool VideoPlay::allocFrame()
 {
     m_mutex.lock();
     // 获取一帧图像需要的大小
@@ -109,7 +109,7 @@ bool XFFmpeg::allocFrame()
 }
 
 // 解码
-int XFFmpeg::decode(AVPacket *packet, QImage &tmpImage)
+int VideoPlay::decode(AVPacket *packet, QImage &tmpImage)
 {
     m_mutex.lock();
 
@@ -150,7 +150,7 @@ int XFFmpeg::decode(AVPacket *packet, QImage &tmpImage)
     return 0;
 }
 
-void XFFmpeg::Close()
+void VideoPlay::Close()
 {
     m_mutex.lock(); // 需要上锁，以防多线程中你这里在close，另一个线程中在读取，
     sws_freeContext(m_img_convert_ctx);

@@ -26,13 +26,13 @@ CONFIG += c++11
 
 SOURCES += \
         VPlayThread.cpp \
-        XFFmpeg.cpp \
+        VideoPlay.cpp \
         main.cpp \
         widget.cpp
 
 HEADERS += \
         VPlayThread.h \
-        XFFmpeg.h \
+        VideoPlay.h \
         widget.h
 
 FORMS += \

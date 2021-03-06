@@ -13,13 +13,13 @@ extern "C"{
 #include <libavutil/imgutils.h>
 }
 
-class XFFmpeg
+class VideoPlay
 {
 public:
     // 单例模式
-    static XFFmpeg *GetInstance()
+    static VideoPlay *GetInstance()
     {
-        static XFFmpeg ff;
+        static VideoPlay ff;
         return &ff;
     }
 
@@ -37,7 +37,7 @@ public:
     void Close();
 
 private:
-    XFFmpeg(); // 构造函数设置为私有，为了实现单例模式
+    VideoPlay(); // 构造函数设置为私有，为了实现单例模式
 
     QMutex m_mutex; // 互斥变量，多线程时避免同时间的读写
     int m_nVideoStream = -1; // 视频流索引，初始化为-1
