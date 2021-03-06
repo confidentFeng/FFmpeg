@@ -20,7 +20,7 @@ void VPlayThread::run()
         printf("Couldn't open input stream.\n");
         return;
     }
-    // 进一步获取视频流信息存储在pFormatCtx中
+    // 进一步获取视频信息存储在pFormatCtx中
     if (avformat_find_stream_info(pFormatCtx, nullptr) < 0)
     {
         printf("Couldn't find stream information.\n");
@@ -45,7 +45,7 @@ void VPlayThread::run()
         return ;
     }
 
-    /*** 3.查找视频解码器并打开 ***/
+    /*** 3.打开视频解码器 ***/
     // 获取视频流解码上下文
     AVCodecContext *pCodecCtx = pFormatCtx->streams[videoStream]->codec;
     // 进一步查找视频解码器
@@ -107,7 +107,7 @@ void VPlayThread::run()
             sws_scale(img_convert_ctx, (const unsigned char* const*)pFrameYUV->data, pFrameYUV->linesize, 0, pCodecCtx->height,
                       pFrameRGB->data, pFrameRGB->linesize);
 
-            // 将RGB转换成QPixmap，每40ms在Label显示一帧图片
+            // 将RGB转换成QPixmap，每40ms显示一帧图片
             QImage image((uchar*)pFrameRGB->data[0],pCodecCtx->width,pCodecCtx->height,QImage::Format_RGB32);
             // 发射更新图片信号，传递image给界面显示
             emit sig_GetOneFrame(image);
