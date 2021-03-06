@@ -1,5 +1,5 @@
-#ifndef XFFMPEG_H
-#define XFFMPEG_H
+#ifndef VIDEOPLAY_H
+#define VIDEOPLAY_H
 
 #include "QObject"
 #include <QImage>
@@ -48,4 +48,4 @@ private:
     struct SwsContext *m_img_convert_ctx = NULL; // YUV转RGB的数据转换参数
 };
 
-#endif // XFFMPEG_H
+#endif // VIDEOPLAY_H
