@@ -1,24 +1,39 @@
-#include "widget.h"
-#include "ui_widget.h"
+#include "OpenGlWidget.h"
 
-Widget::Widget(QWidget *parent) :
-    QWidget(parent),
-    ui(new Ui::Widget)
+OpenGlWidget::OpenGlWidget(QOpenGLWidget *parent) :
+    QOpenGLWidget(parent)
 {
-    ui->setupUi(this);
+    // 初始化窗口大小
+    this->setFixedSize(533, 300);
+
+    // 初始化播放按钮
+    m_pBtnPlay = new QPushButton;
+    m_pBtnPlay->setFixedSize(53, 23);
+    m_pBtnPlay->setText("播放");
+
+    // 布局
+    QVBoxLayout *m_pVLayout = new QVBoxLayout(this);
+    m_pVLayout->addStretch();
+    m_pVLayout->addWidget(m_pBtnPlay, 0, Qt::AlignHCenter);
+    m_pVLayout->addSpacing(12);
 
     m_vPlayThread = new VPlayThread();
     // 连接更新图片信号槽
     connect(m_vPlayThread, SIGNAL(sig_GetOneFrame(QImage)),this,SLOT(slotGetOneFrame(QImage)));
+    // 连接播放按钮的信号槽
+    connect(m_pBtnPlay, &QPushButton::clicked, [=] {
+        // 开启线程，解码播放视频
+        m_vPlayThread->start();
+    });
 }
 
-Widget::~Widget()
+OpenGlWidget::~OpenGlWidget()
 {
-    delete ui;
+
 }
 
 // 绘制FFmpeg转换来的每一帧图片
-void Widget::paintEvent(QPaintEvent *event)
+void OpenGlWidget::paintEvent(QPaintEvent *event)
 {
     Q_UNUSED(event)
 
@@ -40,14 +55,8 @@ void Widget::paintEvent(QPaintEvent *event)
 }
 
 // 接受从FFmpeg传输来的一帧图像
-void Widget::slotGetOneFrame(QImage img)
+void OpenGlWidget::slotGetOneFrame(QImage img)
 {
     m_image = img;
     this->update();
-}
-
-void Widget::on_pushButton_clicked()
-{
-    // 开启线程，解码播放视频
-    m_vPlayThread->start();
 }

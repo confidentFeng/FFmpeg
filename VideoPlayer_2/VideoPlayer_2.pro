@@ -25,18 +25,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        OpenGlWidget.cpp \
         VPlayThread.cpp \
         VideoPlay.cpp \
-        main.cpp \
-        widget.cpp
+        main.cpp
 
 HEADERS += \
+        OpenGlWidget.h \
         VPlayThread.h \
-        VideoPlay.h \
-        widget.h
+        VideoPlay.h
 
-FORMS += \
-        widget.ui
+FORMS +=
 
 INCLUDEPATH +="./include"
 LIBS += -L$$PWD/lib -lavutil -lavformat -lavcodec -lavdevice -lavfilter -lpostproc -lswresample -lswscale
