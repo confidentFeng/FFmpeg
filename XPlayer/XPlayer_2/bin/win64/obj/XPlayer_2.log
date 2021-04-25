@@ -1,0 +1,130 @@
+﻿  XDemux.cpp
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(17,10): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(17,10): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(17,18): error C2238: 意外的标记位于“;”之前
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(18,19): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(18,19): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(18,32): error C2238: 意外的标记位于“;”之前
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(19,19): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(19,19): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(19,32): error C2238: 意外的标记位于“;”之前
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(20,23): error C2061: 语法错误: 标识符“AVPacket”
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(30,17): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(30,17): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(30,36): error C2238: 意外的标记位于“;”之前
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(4,19): error C2065: “AVRational”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(4,30): error C2146: 语法错误: 缺少“)”(在标识符“r”的前面)
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(5,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(5,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(14,9): error C3861: “avformat_network_init”: 找不到标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(29,5): error C2065: “AVDictionary”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(29,19): error C2065: “opts”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(30,18): error C2065: “opts”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(30,5): error C3861: “av_dict_set”: 找不到标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(31,18): error C2065: “opts”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(31,5): error C3861: “av_dict_set”: 找不到标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(36,10): error C2065: “pFormatCtx”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(39,10): error C2065: “opts”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(35,16): error C3861: “avformat_open_input”: 找不到标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(44,9): error C3861: “av_strerror”: 找不到标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(51,38): error C2065: “pFormatCtx”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(51,12): error C3861: “avformat_find_stream_info”: 找不到标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(54,9): error C3861: “av_strerror”: 找不到标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(60,34): error C2065: “pFormatCtx”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(60,58): error C2065: “AV_TIME_BASE”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(63,20): error C2065: “pFormatCtx”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(63,5): error C3861: “av_dump_format”: 找不到标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(66,41): error C2065: “pFormatCtx”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(66,53): error C2065: “AVMEDIA_TYPE_VIDEO”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(66,21): error C3861: “av_find_best_stream”: 找不到标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(72,5): error C2065: “AVStream”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(72,15): error C2065: “pVStream”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(72,26): error C2065: “pFormatCtx”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(75,30): error C2065: “pVStream”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(76,28): error C2065: “pVStream”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(77,25): error C2065: “pVStream”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(78,26): error C2065: “pVStream”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(80,35): error C2065: “pVStream”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(80,31): error C3861: “r2d”: 找不到标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(83,41): error C2065: “pFormatCtx”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(83,53): error C2065: “AVMEDIA_TYPE_AUDIO”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(83,21): error C3861: “av_find_best_stream”: 找不到标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(89,5): error C2065: “AVStream”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(89,15): error C2065: “pAStream”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(89,26): error C2065: “pFormatCtx”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(92,30): error C2065: “pAStream”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(93,28): error C2065: “pAStream”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(94,33): error C2065: “pAStream”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(96,30): error C2065: “pAStream”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(98,32): error C2065: “pAStream”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(105,10): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(105,10): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(105,19): error C2039: "read": 不是 "XDemux" 的成员
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(10): message : 参见“XDemux”的声明
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(106,1): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(106,1): error C2059: 语法错误:“{”
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(106,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(106,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(134,19): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(134,19): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(134,28): error C2039: "copyVPara": 不是 "XDemux" 的成员
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(10): message : 参见“XDemux”的声明
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(135,1): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(135,1): error C2059: 语法错误:“{”
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(135,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(135,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(147,19): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(147,19): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(147,1): error C2086: “int AVCodecParameters”: 重定义
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(134): message : 参见“AVCodecParameters”的声明
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(147,28): error C2039: "copyAPara": 不是 "XDemux" 的成员
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(10): message : 参见“XDemux”的声明
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(148,1): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(148,1): error C2059: 语法错误:“{”
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(148,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(148,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(160,32): error C2065: “pkt”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(160,35): error C2761: “bool XDemux::isAudio(void)”: 不允许重新声明成员
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(161,1): error C2448: “XDemux::isAudio”: 函数样式初始值设定项类似函数定义
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(173,10): error C2065: “pFormatCtx”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(176,20): error C2065: “pFormatCtx”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(176,5): error C3861: “avformat_flush”: 找不到标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(178,49): error C2065: “pFormatCtx”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(179,30): error C2065: “pFormatCtx”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(179,66): error C2065: “AVSEEK_FLAG_BACKWARD”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(179,89): error C2065: “AVSEEK_FLAG_FRAME”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(179,16): error C3861: “av_seek_frame”: 找不到标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(190,10): error C2065: “pFormatCtx”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(193,20): error C2065: “pFormatCtx”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(193,5): error C3861: “avformat_flush”: 找不到标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(195,27): error C2065: “pFormatCtx”: 未声明的标识符
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.cpp(195,5): error C3861: “avformat_close_input”: 找不到标识符
+  main.cpp
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(17,10): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(17,10): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(17,18): error C2238: 意外的标记位于“;”之前
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(18,19): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(18,19): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(18,32): error C2238: 意外的标记位于“;”之前
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(19,19): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(19,19): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(19,32): error C2238: 意外的标记位于“;”之前
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(20,23): error C2061: 语法错误: 标识符“AVPacket”
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(30,17): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(30,17): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(30,36): error C2238: 意外的标记位于“;”之前
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\main.cpp(26,8): error C2039: "read": 不是 "XDemux" 的成员
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(10): message : 参见“XDemux”的声明
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\main.cpp(27,34): error C2039: "copyVPara": 不是 "XDemux" 的成员
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(10): message : 参见“XDemux”的声明
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\main.cpp(28,34): error C2039: "copyAPara": 不是 "XDemux" 的成员
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(10): message : 参见“XDemux”的声明
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\main.cpp(33,51): error C2039: "copyVPara": 不是 "XDemux" 的成员
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(10): message : 参见“XDemux”的声明
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\main.cpp(35,52): error C2039: "copyAPara": 不是 "XDemux" 的成员
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(10): message : 参见“XDemux”的声明
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\main.cpp(39,25): error C2039: "read": 不是 "XDemux" 的成员
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(10): message : 参见“XDemux”的声明
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\main.cpp(40,6): error C2660: “XDemux::isAudio”: 函数不接受 1 个参数
+E:\LearnSpace\FFmpeg\XPlayer\XPlayer_2\src\XDemux.h(20,15): message : 参见“XDemux::isAudio”的声明
+  正在生成代码...
