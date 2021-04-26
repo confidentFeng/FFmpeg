@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>XPlay2Class</class>
+ <widget class="QWidget" name="XPlay2Class">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>XPlay2</string>
+  </property>
+  <widget class="XVideoWidget" name="video">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>720</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="openFile">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>630</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+  </widget>
+  <widget class="XSlider" name="playPos">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>680</y>
+     <width>1241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>999</number>
+   </property>
+   <property name="pageStep">
+    <number>1</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="isplay">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>630</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>播放</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>XVideoWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>XVideoWidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>XSlider</class>
+   <extends>QSlider</extends>
+   <header>XSlider.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="XPlay2.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>openFile</sender>
+   <signal>clicked()</signal>
+   <receiver>XPlay2Class</receiver>
+   <slot>OpenFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>623</x>
+     <y>655</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>669</x>
+     <y>824</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>isplay</sender>
+   <signal>clicked()</signal>
+   <receiver>XPlay2Class</receiver>
+   <slot>PlayOrPause()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>707</x>
+     <y>652</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1296</x>
+     <y>774</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>playPos</sender>
+   <signal>sliderPressed()</signal>
+   <receiver>XPlay2Class</receiver>
+   <slot>SliderPress()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>119</x>
+     <y>691</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>198</x>
+     <y>950</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>playPos</sender>
+   <signal>sliderReleased()</signal>
+   <receiver>XPlay2Class</receiver>
+   <slot>SliderRelease()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>694</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>194</x>
+     <y>885</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>OpenFile()</slot>
+  <slot>PlayOrPause()</slot>
+  <slot>SliderPress()</slot>
+  <slot>SliderRelease()</slot>
+ </slots>
+</ui>
